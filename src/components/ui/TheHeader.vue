@@ -6,7 +6,7 @@
     <header>
         <div class="container section--container">
             <img src="../../assets/logo-fifa.png" alt="Logo oficial fifa 2022">
-            <nav>
+            <nav aria-label="Navegação principal">
                 <a href="#">Início</a>
                 <a href="#">Grupos</a>
                 <a href="#">Partidas</a>
@@ -20,7 +20,7 @@
 
 header {
     width: 100%;
-    height: 96px;
+    min-height: 96px;
     background-color: var(--dark-30);
     display: flex;
     justify-content: center;
@@ -37,16 +37,16 @@ header .container {
 
 }
 nav {
-    width: 100%;
-    max-width: 414px;
+    width: auto;
     display: flex;
-    justify-content: space-evenly;
+    gap: 3.5rem;
 }
 
 nav a {
     font-weight: 400;
     font-size: 1.1rem;
     color: var(--dark-20);
+    transition: color 0.2s;
 }
 nav a:hover {
     color: var(--brand-color);
